@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 </head>
 
-<body>
-  <audio id="music" autoplay="autoplay">
+<body onload="musicPlay()">
+  <audio id="music">
     <source src="Sakura Iro No Yume.mp3" type="audio/mp3" />
   </audio>
   <div class="velas">
@@ -179,6 +179,13 @@
 </div>
   <script src='js/jquery.js'></script>
   <script src="js/index.js"></script>
+  <script type="text/javascript">
+    function musicPlay() {
+      debugger
+      var music=document.getElementById('music');
+      music.play();
+    }
+  </script>
 </body>
 
 </html>
